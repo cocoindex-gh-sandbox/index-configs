@@ -1,47 +1,19 @@
-{
-  "cocoindex_md": {
+[
+  {
     "repo_owner": "cocoindex-gh-sandbox",
     "repo_name": "cocoindex",
-    "git_refs": [
-      "main",
-      "mr-v0.1.0",
-      "mr-feature-a",
-      "mr-v0.2.0",
-      "mr-feature-b"
-    ],
+    "branches": "main|mr-feature-.*",
+    "tags": "mr-v.*",
     "included_patterns": [
       "**/*.md",
-      "**/*.mdx"
+      "**/*.mdx",
+      "python/**/*.py",
+      "rust/**/*.rs"
     ],
     "excluded_patterns": [
       "**/.*",
       "**/target",
       "**/node_modules"
     ]
-  },
-  "cocoindex_py": {
-    "repo_owner": "cocoindex-gh-sandbox",
-    "repo_name": "cocoindex",
-    "git_refs": [
-      "main",
-      "mr-feature-b"
-    ],
-    "included_patterns": [
-      "python/**/*.py"
-    ],
-    "excluded_patterns": [
-      "**/.*"
-    ]
-  },
-  "cocoindex_rs": {
-    "repo_owner": "cocoindex-gh-sandbox",
-    "repo_name": "cocoindex",
-    "git_ref": "main",
-    "included_patterns": [
-      "rust/**/*.rs"
-    ],
-    "excluded_patterns": [
-      "**/.*"
-    ]
   }
-}
+]
